@@ -146,7 +146,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.pushNamed(context, RouteName.loginView);
+                            Navigator.pushNamed(context, RouteName.loginScreenView);
                           },
                           child: Text.rich(TextSpan(
                               text: "Already have an account? ",

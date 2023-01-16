@@ -18,7 +18,7 @@ class SplashServices {
     }
     else {
       Timer(const Duration(seconds: 3),
-              () => Navigator.pushNamed(context, RouteName.loginView));
+              () => Navigator.pushNamed(context, RouteName.loginScreenView));
     }
   }
 }

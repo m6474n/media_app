@@ -37,7 +37,8 @@ class InputTextField extends StatelessWidget {
         enabled: enable,
         style: Theme.of(context).textTheme.bodyText2!.copyWith(
               height: 0,
-              fontSize: 18,
+              fontSize: 16,
+
             ),
         decoration: InputDecoration(
             contentPadding: const EdgeInsets.all(16),
@@ -45,7 +46,7 @@ class InputTextField extends StatelessWidget {
                 borderSide:const BorderSide(color: AppColors.textFieldDefaultFocus),
                 borderRadius: BorderRadius.circular(8)),
             focusedBorder: OutlineInputBorder(
-                borderSide:const BorderSide(color: AppColors.secondaryColor),
+                borderSide:const BorderSide(color: AppColors.mainAppColor),
                 borderRadius: BorderRadius.circular(8)),
             errorBorder: OutlineInputBorder(
                 borderSide:const BorderSide(color: AppColors.alertColor),

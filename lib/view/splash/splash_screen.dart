@@ -37,15 +37,18 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: const [
-          Image(image: AssetImage('assets/images/logo.jpg')),
+          // Image(image: AssetImage('assets/images/logo.jpg')),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 20),
             child: Center(
                 child: Text(
-              'Tech Brothers Media',
+                  textAlign: TextAlign.center,
+              'Social Media \nApp',
               style: TextStyle(
+
                   fontFamily: AppFonts.sfProDisplayBold,
                   fontSize: 40,
+                  color: Colors. white,
                   fontWeight: FontWeight.w700),
             )),
           )

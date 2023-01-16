@@ -1,8 +1,10 @@
 // ignore_for_file: unused_local_variable
 
+
 import 'package:flutter/material.dart';
 import 'package:tech_media/utils/routes/route_name.dart';
 import 'package:tech_media/view/dashboard/dashboard_screen.dart';
+import 'package:tech_media/view/dashboard/profile/profile.dart';
 import 'package:tech_media/view/login/login_screen.dart';
 import 'package:tech_media/view/signup/sign_up_screen.dart';
 import 'package:tech_media/view/splash/splash_screen.dart';
@@ -15,14 +17,19 @@ class Routes {
     switch (settings.name) {
       case RouteName.splashScreen:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
-      case RouteName.loginView:
+      case RouteName.loginScreenView:
         return MaterialPageRoute(builder: (_) => const LoginScreen());
-      case RouteName.forgotPassScreen:
+
+      case RouteName.forgotPassView:
         return MaterialPageRoute(builder: (_) => const ForgotPassScreen());
       case RouteName.signupView:
         return MaterialPageRoute(builder: (_) => const SignUpScreen());
       case RouteName.dashboardView:
         return MaterialPageRoute(builder: (_) => const DashboardScreen());
+      case RouteName.profileView:
+        return MaterialPageRoute(builder: (_)=> const ProfileScreen());
+      case RouteName.loginScreenView:
+        return MaterialPageRoute(builder: (context)=> LoginScreen());
       default:
         return MaterialPageRoute(builder: (_) {
           return Scaffold(
@@ -34,3 +41,13 @@ class Routes {
     }
   }
 }
+
+Map<String , WidgetBuilder> routes={
+  "/" : (context) => DashboardScreen(),
+  "/splashScreen" : (context) => SplashScreen(),
+  "/login" : (context) => LoginScreen(),
+  "/signup" : (context) => SignUpScreen(),
+  "/forgot" : (context) => ForgotPassScreen(),
+  "/profile" : (context) => ProfileScreen(),
+
+};

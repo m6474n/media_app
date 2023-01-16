@@ -28,7 +28,7 @@ class AppColors {
 
   static const Color dialogAlertBackgroundColor = Color(0xff262938);
   static const Color lightGrayColor = Color(0xffA5A5A5);
-
+static const Color mainAppColor = Color(0xff242424);
   //otp screen changing color
   static const Color otpBorderColor = Color.fromRGBO(34, 34, 34, 0.1);
   static const Color otpFocusColor = Color.fromRGBO(19, 103, 33, 1);

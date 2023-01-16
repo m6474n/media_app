@@ -28,7 +28,7 @@ class ForgotPassController with ChangeNotifier{
           .sendPasswordResetEmail(email: email)
           .then((value) {
         setLoading(false);
-        Navigator.pushNamed(context, RouteName.loginView);
+        Navigator.pushNamed(context, RouteName.loginScreenView);
 
 
         Utils.toastMessage(

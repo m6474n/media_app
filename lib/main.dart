@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     height: 1.9),
                 headline4: TextStyle(
-                    fontSize: 24,
+                    fontSize: 28,
                     fontFamily: AppFonts.sfProDisplayMedium,
                     color: AppColors.primaryTextTextColor,
                     fontWeight: FontWeight.w500,

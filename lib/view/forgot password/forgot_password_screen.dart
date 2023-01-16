@@ -35,6 +35,9 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
     final height = MediaQuery.of(context).size.height * 1;
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+        ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
           child: SingleChildScrollView(

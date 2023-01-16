@@ -12,7 +12,7 @@ final bool loading ;
       required this.onPress,
        this.loading = false,
       this.textColor = AppColors.whiteColor,
-       this.color = AppColors.primaryColor})
+       this.color = AppColors.mainAppColor})
       : super(key: key);
 
   @override

@@ -90,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 return value.isEmpty ? 'Enter Password' : null;
                               },
                               keyboardType: TextInputType.visiblePassword,
-                              hint: 'Passeord',
+                              hint: 'Password',
                               obscureText: true),
                         ],
                       ),
@@ -99,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   alignment: Alignment.topRight,
                   child: GestureDetector(
                     onTap: (){
-                     Navigator.pushNamed(context, RouteName.forgotPassScreen);
+                     Navigator.pushNamed(context, RouteName.forgotPassView);
                     },
                     child: Text(
                       'Forgot Password?',
@@ -131,7 +131,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 SizedBox(
-                  height: height * 0.01,
+                  height: height * 0.03,
                 ),
                 InkWell(
                   onTap: () {
@@ -152,7 +152,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               .copyWith(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
-                                  color: AppColors.primaryMaterialColor,
+                                  color: AppColors.mainAppColor,
                                   decoration: TextDecoration.underline),
                         )
                       ])),
