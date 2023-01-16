@@ -15,7 +15,7 @@ class AppColors {
   static const Color inputTextBorderColor = Color.fromRGBO(19, 103, 33, 1);
   static const Color hintColor = Color.fromRGBO(114, 114, 114, 1);
 
-  static const Color textFieldDefaultFocus = Color(0xfff5f5f6);
+  static const Color textFieldDefaultFocus = Color(0xff5f5f6);
   static const Color textFieldDefaultBorderColor = Color(0xffDFDFE1);
   static const Color textFieldFocusBorderColor = Color.fromRGBO(19, 103, 33, 1);
 
